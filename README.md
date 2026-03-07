@@ -13,7 +13,7 @@ Minecraft için veri odaklı, modüler ve ölçeklenebilir sistemler geliştiriy
 
 ## 🚀 Öne Çıkan Projeler
 
-### [ToolkitMC/GCS](https://github.com/ToolkitMC/GCS)
+### [ToolkitMC/.GCS](https://github.com/ToolkitMC/.GCS)
 Global Dynamic Command System v1.0 - 19 Handler'lı modüler komut mimarisi
 ⭐ 1 | 🔧 mcfunction
 
