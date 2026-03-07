@@ -31,3 +31,29 @@ Minecraft için Türk yapımı izin & yönetim datapack
 
 ## 💻 Teknoloji Stack
 ```text
+Languages:    mcfunction, JSON, NBT
+Focus:        Minecraft Datapacks 1.21+
+Architecture: Storage-driven, Modular Systems
+Specialty:    Macro Engines, Command Systems, GUI Libraries
+```
+
+## 📊 GitHub İstatistikleri
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=tickwarden&show_icons=true&theme=dark)
+
+## 🎮 Çalışma Prensipleri
+
+- ✅ Clean functions only
+- ✅ No hardcoding
+- ✅ Datapack-driven approach
+- ✅ MIT-compatible licensing
+- ✅ Community collaboration
+
+## 📫 İletişim
+
+- 💬 GitHub Issues üzerinden ulaşabilirsiniz
+- 🌐 Minecraft topluluğunda aktif
+
+---
+
+💡 **1,307 contributions** in the last year | 🌟 **Open to collaboration**
