@@ -56,7 +56,6 @@
 - GitHub repository (Version control)
 - Open source (MIT License)
 - Community contributions
-- Portfolio showcase
 
 ---
 
