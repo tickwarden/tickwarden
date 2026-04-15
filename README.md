@@ -1,4 +1,4 @@
-markdown<div align="center">
+<div align="center">
 
 # 👋 Merhaba, ben Legends11!
 
@@ -10,16 +10,6 @@ markdown<div align="center">
 
 </div>
 
----
-
-> [!CAUTION]
-> **Bu profil altındaki tüm projeler kalıcı olarak arşivlenmiştir.**
-> Tüm projelerin geliştirilmesi durdurulmuştur. Gelecekte herhangi bir sürüm,
-> güncelleme veya devam projesi planlanmamaktadır. Depolar yalnızca
-> referans amaçlı olduğu gibi korunmaktadır. Yeni sorunlar, pull request'ler
-> veya katkılar incelenmeyecek ya da kabul edilmeyecektir.
->
-> **12 Nisan 2026 tarihinde kalıcı olarak arşivlendi.**
 
 ---
 
