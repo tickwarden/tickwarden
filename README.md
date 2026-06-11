@@ -1,150 +1,142 @@
 <div align="center">
 
-# 👋 Merhaba, ben Legends11!
+# 👋 Hi, I'm Legends11! / Merhaba, ben Legends11!
 
-**Minecraft Datapack Geliştiricisi** | Depolama Tabanlı Mimariler
+**Minecraft Fabric Mod Developer** | Modular Systems · GUI Frameworks · Storage-Driven Architecture  
+**Minecraft Fabric Mod Geliştiricisi** | Modüler Sistemler · GUI Çerçeveleri · Depolama Tabanlı Mimari
 
-![Profil Görüntülenme](https://komarev.com/ghpvc/?username=tickwarden&color=blueviolet&style=flat-square&label=Profil+Görüntülenme)
+![Profile Views](https://komarev.com/ghpvc/?username=tickwarden&color=blueviolet&style=flat-square&label=Profile+Views)
 
-> **"Komut blokları GitHub'a atılamaz. Ben profesyonel geliştirme için datapack kullanıyorum."**
+> **"Datapacks have limits. Fabric mods don't."**  
+> **"Datapack'lerin sınırları var. Fabric mod'ların yok."**
 
 </div>
 
+---
+
+## ⚡ Why Fabric? / Neden Fabric?
+
+### 🚫 The Problem with Datapacks / Datapack'lerin Sorunu
+
+**EN:** Datapacks are great for small projects — but they hit hard ceilings: no custom items with real behavior, no deep game loop control, no reliable networking, and format drift between MC versions.
+
+**TR:** Datapack'ler küçük projeler için iyi — ama duvarla çarpışıyorsunuz: gerçek davranışlı özel item yok, derin oyun döngüsü kontrolü yok, güvenilir networking yok ve MC sürümleri arasında format kayması var.
+
+| Feature / Özellik | Datapack | Fabric Mod |
+|---|---|---|
+| **Custom Item Behavior / Özel Item Davranışı** | ❌ Limited | ✅ Full control |
+| **Mixins (Vanilla Injection)** | ❌ None | ✅ Full ASM |
+| **Networking (C↔S Packets)** | ❌ None | ✅ Native |
+| **Version Portability / Sürüm Taşınabilirliği** | 🔴 Breaks often | 🟢 Loom handles it |
+| **GitHub CI/CD** | ✅ Text files | ✅ Gradle + Loom |
+| **Performance (TPS)** | 🟡 Command overhead | 🟢 Native Java |
+| **Dependency Management / Bağımlılık Yönetimi** | ❌ Manual | ✅ Gradle |
+| **API Surface / API Yüzeyi** | 🔴 Commands only | 🟢 Full Java + FAPI |
+
+### ✅ Fabric Advantages / Fabric Avantajları
+
+- ✅ **Mixins** — Inject directly into vanilla classes / Vanilla sınıflara direkt inject
+- ✅ **Full Java** — No mcfunction limitations / mcfunction sınırları yok
+- ✅ **Fabric API** — Events, networking, registries out of the box / Hazır event, networking, registry
+- ✅ **Loom** — Remapping, multi-version support / Remapping, çok sürümlü destek
+- ✅ **Proper dependency graph** — Gradle, JARs, MavenCentral / Gerçek bağımlılık grafiği
+- ✅ **GitHub Actions CI** — Build, test, release in one pipeline / Tek pipeline'da build, test, release
 
 ---
 
-## ⚡ Neden Datapack?
+## 🎯 About Me / Hakkımda
 
-### 🚫 Komut Bloğu Sistemlerinin Sorunları
+**EN:** I build Minecraft Fabric mods targeting MC 1.21.x under the [runtoolkit](https://github.com/runtoolkit) and [ToolkitMC](https://github.com/ToolkitMC) GitHub organizations. My focus is on GUI frameworks, datapack-to-mod ports, and modular server-side tooling.
 
-#### Tanıdık Geldi mi?
-[!] Minecraft'ın belleği tükendi!
-[!] Oyun dondu - /kill @e[type=command_block_minecart]
-[!] TPS: 2/20 - Oyun oynanamaz halde
+**TR:** [runtoolkit](https://github.com/runtoolkit) ve [ToolkitMC](https://github.com/ToolkitMC) GitHub organizasyonları altında MC 1.21.x hedefli Fabric modlar geliştiriyorum. Odak noktam GUI çerçeveleri, datapack-to-mod portları ve modüler sunucu tarafı araçlar.
 
-| Sorun | Komut Bloğu | Datapack |
-|-------|-------------|----------|
-| **GitHub'a Atılabilir mi?** | ❌ İmkansız (NBT binary) | ✅ Metin dosyaları |
-| **Bellek Kullanımı** | 🔴 2GB+ → Çökme | 🟢 50MB |
-| **Performans (TPS)** | 🔴 5-15 (Lag) | 🟢 19-20 (Akıcı) |
-| **Dünya Boyutu** | 🔴 500MB+ | 🟢 Normal |
-| **Sürüm Kontrolü** | ❌ Yok | ✅ Git |
-| **İş Birliği** | ❌ İmkansız | ✅ Pull Request'ler |
-| **Paylaşım** | 🔴 Dünya dosyası (.zip) | 🟢 Tek dosya (5MB) |
-
-### ✅ Datapack Avantajları
-
-- ✅ **Sıfır bellek sızıntısı** - Optimize edilmiş kod
-- ✅ **Temiz dünya** - Hiç entity yok
-- ✅ **20 TPS sabit** - Performans garantisi
-- ✅ **GitHub'da paylaşılabilir** - Açık kaynak iş akışı
-- ✅ **Profesyonel** - Issue'lar, PR'lar, Release'ler
+- 🧩 **Modular Architecture / Modüler Mimari** — Clean, composable mod systems
+- ⚡ **Performance First / Önce Performans** — Native Java, minimal overhead
+- 🔐 **Security Focused / Güvenlik Odaklı** — No `java.awt.Desktop`, no HTTP abuse
+- 📚 **MIT Licensed / MIT Lisanslı** — Open source, community-friendly
+- 🇹🇷 **Turkish Developer / Türk Geliştirici** — Supporting the local Minecraft community
 
 ---
 
-## 🇹🇷 Türk Minecraft Oyuncularına
+## 🚀 Featured Projects / Öne Çıkan Projeler
 
-### 🤔 "Neden Komut Bloğu Değil de Datapack?"
+### 🎨 [ToolkitMC/guiAPI](https://github.com/ToolkitMC/guiAPI)
+> **EN:** Datapack-driven chest GUI system for MC 1.21.x — action types, cooldowns, addon mods  
+> **TR:** MC 1.21.x için datapack güdümlü sandık GUI sistemi — action tipleri, cooldown'lar, addon modlar  
+> ![Stars](https://img.shields.io/github/stars/ToolkitMC/guiAPI?style=flat-square&color=yellow) ![Lang](https://img.shields.io/github/languages/top/ToolkitMC/guiAPI?style=flat-square)
 
-**Komut Bloğu:** Hobbyist
-- Dünya dosyası paylaş (500MB .zip)
-- "Nasıl yaptım" anlatılamaz
-- Bellek tükenir, oyun çöker
-
-**Datapack:** Profesyonel Geliştirici
-- GitHub deposu (Sürüm kontrolü)
-- Açık kaynak (MIT Lisansı)
-- Topluluk katkıları
-
+### 📦 [runtoolkit/dataLib-FabricMod](https://github.com/runtoolkit/dataLib-FabricMod)
+> **EN:** Core library mod — command handlers, permission system, scheduler, fiber system  
+> **TR:** Çekirdek kütüphane modu — komut işleyiciler, izin sistemi, zamanlayıcı, fiber sistemi  
+> ![Stars](https://img.shields.io/github/stars/runtoolkit/dataLib-FabricMod?style=flat-square&color=yellow) ![Lang](https://img.shields.io/github/languages/top/runtoolkit/dataLib-FabricMod?style=flat-square)
 ---
 
-## 🎯 Hakkımda
-
-Minecraft için veri odaklı, modüler ve ölçeklenebilir sistemler geliştirdim. Makro motorları, komut sistemleri ve GUI kütüphaneleri ile datapack geliştirme standartlarını yükseltmeyi hedefledim.
-
-- 🧩 **Modüler Mimari** - Temiz, yeniden kullanılabilir fonksiyonlar
-- ⚡ **Önce Performans** - Optimize edilmiş depolama sistemleri
-- 📚 **MIT Dostu** - Açık kaynak topluluğuna katkı
-- 🇹🇷 **Türk Geliştirici** - Yerel Minecraft topluluğuna destek
-
----
-
-## 🚀 Öne Çıkan Projeler
-
-### 🎮 [ToolkitMC/.GCS](https://github.com/ToolkitMC/.GCS)
-> Global Dinamik Komut Sistemi v1.0 - 19 işleyicili modüler komut mimarisi
-> ![Yıldız](https://img.shields.io/github/stars/ToolkitMC/.GCS?style=flat-square&color=yellow) ![Dil](https://img.shields.io/github/languages/top/ToolkitMC/.GCS?style=flat-square)
-
-### ⚙️ [ToolkitMC/macroEngine-dp](https://github.com/ToolkitMC/macroEngine-dp)
-> Gelişmiş Makro Motoru [Minecraft 1.21] - Gelişmiş makro sistemi
-> ![Yıldız](https://img.shields.io/github/stars/tickwarden/macroEngine-dp?style=flat-square&color=yellow) ![Dil](https://img.shields.io/github/languages/top/tickwarden/macroEngine-dp?style=flat-square)
-
-### 🎨 [AjjMC/ajjgui](https://github.com/AjjMC/ajjgui)
-> Minecraft harita yapımı için veri odaklı GUI kütüphanesi
-> ![Yıldız](https://img.shields.io/github/stars/AjjMC/ajjgui?style=flat-square&color=yellow) ![Dil](https://img.shields.io/github/languages/top/AjjMC/ajjgui?style=flat-square)
-
-### 🔐 [ToolkitMC/glc_permissions](https://github.com/ToolkitMC/glc_permissions)
-> Minecraft için Türk yapımı izin ve yönetim datapack'i
-> ![Yıldız](https://img.shields.io/github/stars/ToolkitMC/glc_permissions?style=flat-square&color=yellow) ![Dil](https://img.shields.io/github/languages/top/ToolkitMC/glc_permissions?style=flat-square)
-
----
-
-## 💻 Teknolojiler & Araçlar
+## 💻 Tech Stack / Teknoloji Yığını
 
 <div align="center">
 
+![Java](https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Fabric](https://img.shields.io/badge/Fabric_Loader-DBD0B4?style=for-the-badge&logo=curseforge&logoColor=black)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.x-62B47A?style=for-the-badge&logo=minecraft&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
 </div>
 
-**Teknoloji Yığını:**
-- **Diller:** mcfunction, JSON, NBT
-- **Odak:** Minecraft Datapack'leri 1.21.x
-- **Mimari:** Depolama tabanlı, Modüler Sistemler
-- **Uzmanlık:** Makro Motorları, Komut Sistemleri, GUI Kütüphaneleri
+**EN:** Languages: Java 21, JSON, Gradle Groovy/Kotlin DSL  
+**TR:** Diller: Java 21, JSON, Gradle Groovy/Kotlin DSL
+
+**EN:** Stack: Fabric Loader · Fabric API · Fabric Loom · Mixins · Yarn Mappings · Brigadier  
+**TR:** Yığın: Fabric Loader · Fabric API · Fabric Loom · Mixin'ler · Yarn Mapping'leri · Brigadier
+
+**EN:** Target: MC 1.21.x (primary), 1.21.1 (LTS baseline), 1.21.8 (active)  
+**TR:** Hedef: MC 1.21.x (birincil), 1.21.1 (LTS taban), 1.21.8 (aktif)
 
 ---
 
-## 🔥 Katkı Serisi
+## 🔥 Contribution Streak / Katkı Serisi
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=tickwarden&theme=tokyonight&hide_border=true" alt="GitHub Serisi" />
+  <img src="https://streak-stats.demolab.com/?user=tickwarden&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
 
-## 📈 Aktivite Grafiği
+## 📈 Activity Graph / Aktivite Grafiği
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tickwarden&theme=tokyo-night&hide_border=true&area=true" alt="Katkı Grafiği" width="95%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tickwarden&theme=tokyo-night&hide_border=true&area=true" alt="Contribution Graph" width="95%" />
 </p>
 
 ---
 
-## 🎮 Çalışma Prensipleri
+## 🎮 Development Principles / Geliştirme Prensipleri
 
-| Prensip | Açıklama |
-|---------|----------|
-| ✅ **Temiz Fonksiyonlar** | Sadece temiz, okunabilir fonksiyonlar |
-| ✅ **Sabit Kod Yok** | Dinamik, yapılandırılabilir sistemler |
-| ✅ **Datapack Odaklı** | Veri odaklı yaklaşım |
-| ✅ **MIT Uyumlu** | Açık kaynak dostu lisanslama |
-| ✅ **Topluluk Önce** | Topluluk iş birliğine açık |
+| Principle / Prensip | EN | TR |
+|---|---|---|
+| ✅ **Clean Code** | Readable, maintainable, no hacks | Okunabilir, sürdürülebilir, hack yok |
+| ✅ **No Hardcoding** | Dynamic, configurable systems | Dinamik, yapılandırılabilir sistemler |
+| ✅ **Security First** | No HTTP abuse, no Desktop API misuse | HTTP kötüye kullanımı yok, Desktop API yok |
+| ✅ **MIT Licensed** | Open source, attribution respected | Açık kaynak, atıf hakları korunur |
+| ✅ **CI/CD Always** | GitHub Actions on every repo | Her repoda GitHub Actions |
+| ✅ **Version Aware** | API verified against real MC source | API gerçek MC kaynağına karşı doğrulanır |
 
 ---
 
-## 📫 İletişim
+## 📫 Contact / İletişim
 
 <div align="center">
 
-[![GitHub Profili](https://img.shields.io/badge/GitHub-tickwarden-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tickwarden)
+[![runtoolkit](https://img.shields.io/badge/GitHub-runtoolkit-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/runtoolkit)
+[![ToolkitMC](https://img.shields.io/badge/GitHub-ToolkitMC-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ToolkitMC)
 
-💬 **GitHub Issue'ları** üzerinden ulaşabilirsiniz
-🌐 **Minecraft** topluluğunda aktif
+💬 **EN:** Reach out via GitHub Issues on any project repo  
+💬 **TR:** Herhangi bir proje reposundaki GitHub Issue'ları üzerinden ulaşabilirsiniz
+
+🌐 **EN:** Active in the Minecraft Java modding community  
+🌐 **TR:** Minecraft Java modlama topluluğunda aktif
 
 </div>
 
@@ -152,10 +144,11 @@ Minecraft için veri odaklı, modüler ve ölçeklenebilir sistemler geliştirdi
 
 <div align="center">
 
-### 💡 Açık Kaynak • Sürüm Kontrolü • Profesyonel Geliştirme
+### 💡 Open Source · Version Control · Native Java Performance
 
-⭐ **Bu profili beğendiyseniz, projelere yıldız vermeyi unutmayın!**
+**EN:** ⭐ If you find these projects useful, a star goes a long way!  
+**TR:** ⭐ Bu projeleri faydalı bulduysanız yıldız vermeyi unutmayın!
 
-❤️ ile yapıldı · Legends11
+Made with ❤️ · Legends11
 
 </div>
