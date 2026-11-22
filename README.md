@@ -1,3 +1,27 @@
+# 🗄️ Bu hesap arşivlendi — kullanılmıyor
+
+> **Durum:** arşivlendi · **Bakım:** yok · **Taşındığı yer:** [`tickwarden-archived`](https://github.com/tickwarden-archived)
+>
+> Buradaki depolar **tickwarden** hesabından çıkarıldı ve arşiv organizasyonuna taşındı.
+> Geçmiş (issue, PR, yıldız, release) korunuyor; eski bağlantılar yönlendiriliyor.
+> Yeni iş bu hesapta yapılmıyor. Sorular ve geri alma: [`tickwarden-archived/archive-meta`](https://github.com/tickwarden-archived/archive-meta).
+
+<img src="https://raw.githubusercontent.com/tickwarden/tickwarden/HEAD/archived-icon.png" width="160" alt="arşivlendi">
+
+### Geri alma
+
+Bu depo salt okunur durumda. Geri almak için `restore/` klasörüne bak:
+
+```bash
+export GITHUB_TOKEN=...                        # repo + admin:org
+python3 restore/restore.py --list
+python3 restore/restore.py --unarchive --apply
+python3 restore/restore.py --transfer-back --apply
+```
+
+<details>
+<summary>Arşivden önceki içerik</summary>
+
 <div align="center">
 
 # 👋 Hi, I'm Legends11! / Merhaba, ben Legends11!
@@ -152,3 +176,6 @@
 Made with ❤️ · Legends11
 
 </div>
+
+
+</details>
